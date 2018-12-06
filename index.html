@@ -19,10 +19,10 @@
     <!-- Header Start -->
     <header class="header" id="header">
         <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
-        <div class="header-img" id="header-img">
+        <div class="header-img">
             <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
             <a href="#default" class="logo">
-                <img src="assets/images/logo_predicare_white.png">
+                <img id="header-img" src="https://raw.githubusercontent.com/ziaongit/Product-Landing-Page/master/assets/images/logo_predicare_white.png">
             </a>
         </div>
         <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
@@ -31,7 +31,7 @@
             <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
             <a class="nav-link active" id="home" href="#home">Home</a>
             <a class="nav-link" href="#chain-of-care">RETTS a chain of care</a>
-            <a class="nav-link" href="#RETTS-firm">RETTS Film</a>
+            <a class="nav-link" href="#RETTS-film">RETTS Film</a>
             <a class="nav-link" href="#copyright">Copyright</a>
         </nav>
     </header>
@@ -46,7 +46,7 @@
                     RETTS is continually under development and is now available online. It can also be integrated with an
                     increasing number of medical records systems.</p>
             </div>
-            <img src="assets/images/RETTS.png" class="rounded mx-auto d-block" alt="RETTS" width="70%">
+            <img src="https://raw.githubusercontent.com/ziaongit/Product-Landing-Page/master/assets/images/RETTS.png" class="rounded mx-auto d-block" alt="RETTS" width="70%">
         </div>
         <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
         <div class="container mt-5" id="chain-of-care">
@@ -57,15 +57,15 @@
                     increase in the demands being placed on it. There is now a whole range of RETTS products available for
                     use online or offline, as well as for training and integration with medical records systems.</p>
             </div>
-            <img src="assets/images/Produkter-flow2.png" class="rounded mx-auto d-block" alt="RETTS" width="70%">
+            <img src="https://raw.githubusercontent.com/ziaongit/Product-Landing-Page/master/assets/images/Produkter-flow2.png" class="rounded mx-auto d-block" alt="RETTS" width="70%">
         </div>
         <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
         <div class="container mt-5" id="RETTS-film">
             <div class="jumbotron">
                 <h1>RETTS Film</h1>
                 <!-- User Story #6: I can watch an embedded product video with id="video". -->
-                <div class="embed-responsive embed-responsive-16by9" id="video">
-                    <iframe class="embed-responsive-item" src="https://predicare.se/content/uploads/retts_introduktion_ue.mp4" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="video" class="embed-responsive-item" src="https://predicare.se/content/uploads/retts_introduktion_ue.mp4" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
                                     <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
                                     <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
                                     <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                    <input name="email" id="email" type="email" class="form-control" placeholder="Enter your email address" required/>
                                 </div>
                             </div>
                             <div class="col-md-8 justify-content-md-center sub-button">

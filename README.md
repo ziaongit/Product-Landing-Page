@@ -61,3 +61,6 @@ User Story #14: My product landing page should have at least one media query.
 ```shell
 User Story #15: My product landing page should utilize CSS flexbox at least once.
 ```
+
+## See the project on CodePen
+Click here [here](https://codepen.io/ziaullahzia/full/MzNQvL/)

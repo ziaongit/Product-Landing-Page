@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header" id="header">
+        <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
+        <div class="header-img" id="header-img">
+            <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
+            <a href="#default" class="logo">
+                <img src="assets/images/logo_predicare_white.png">
+            </a>
+        </div>
+        <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
+        <!-- User Story #13: The navbar should always be at the top of the viewport. -->
+        <nav class="header-right" id="nav-bar">
+            <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
+            <a class="nav-link active" id="home" href="#home">Home</a>
+            <a class="nav-link" href="#chain-of-care">RETTS a chain of care</a>
+            <a class="nav-link" href="#RETTS-firm">RETTS Film</a>
+            <a class="nav-link" href="#copyright">Copyright</a>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- User Story #15: My product landing page should utilize CSS flexbox at least once. -->
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>About RETTS</h1>
+                <p>RETTS has facilitated rapid, safe, high quality care for patients seeking emergency medical care since 2005.
+                    RETTS is continually under development and is now available online. It can also be integrated with an
+                    increasing number of medical records systems.</p>
+            </div>
+            <img src="assets/images/RETTS.png" class="rounded mx-auto d-block" alt="RETTS" width="70%">
+        </div>
+        <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+        <div class="container mt-5" id="chain-of-care">
+            <div class="jumbotron">
+                <h1>RETTS for the entire chain of care</h1>
+                <p>Due to the increased demand for validated and structured decision support systems, RETTS is used increasingly
+                    in fields outside emergency medicine. This increase in the demand for the RETTS system has led to an
+                    increase in the demands being placed on it. There is now a whole range of RETTS products available for
+                    use online or offline, as well as for training and integration with medical records systems.</p>
+            </div>
+            <img src="assets/images/Produkter-flow2.png" class="rounded mx-auto d-block" alt="RETTS" width="70%">
+        </div>
+        <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+        <div class="container mt-5" id="RETTS-film">
+            <div class="jumbotron">
+                <h1>RETTS Film</h1>
+                <!-- User Story #6: I can watch an embedded product video with id="video". -->
+                <div class="embed-responsive embed-responsive-16by9" id="video">
+                    <iframe class="embed-responsive-item" src="https://predicare.se/content/uploads/retts_introduktion_ue.mp4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+        <div class="container mt-5" id="copyright">
+            <div class="jumbotron">
+                <h1>Copyright</h1>
+                <p>RETTS is designed for users at emergency departments, ambulance services and other healthcare providers in
+                    need of decision support. RETTS© is a registered trademark. RETTS decision support is protected by the
+                    Swedish Copyright Act (SOU 2011:32). Therefore, RETTS user activity is governed by the Swedish Trademark
+                    Act (SFS 2010:1877) and the Swedish Copyright Act (SOU 2011:32).</p>
+                <p>For authorisation to use RETTS, the user or organisation needs a license and a log in that is common to the
+                    organisation. There will also be one or two persons in the organisation designated as “super users”,
+                    with responsibility for contact between Predicare and your organisation. A “super user” also has increased
+                    access to RETTS. When you are logged in you can either use RETTS online via the internet, or print out
+                    the paper version of RETTS. It is up to the user to choose the working method.</p>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="jumbotron">
+                <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
+                <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully. -->
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8">
+                            <div class="col-md-8 ustify-content-md-center sub-email">
+                                <div class="form-group">
+                                    <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
+                                    <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
+                                    <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="col-md-8 justify-content-md-center sub-button">
+                                <div class="form-group">
+                                    <!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
+                                    <input type="submit" id="submit" value="Submit" class="btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
